@@ -75,7 +75,7 @@ Aspectos técnicos o de negocio a considerar durante el desarrollo:
 4. **Revisa y actualiza** la plantilla regularmente según el avance del desarrollo.  
 5. **Comparte y discute** la plantilla con el equipo para garantizar alineación y claridad.  
 6. **Utiliza herramientas de gestión de proyectos** para vincular esta plantilla a historias de usuario, tickets de desarrollo o tableros ágiles.
-7. **Cada vez que se desarrolle una tarea**, indicar los momentos óptimos para realizar commits en el formato: git commit -m "Descripción del cambio"
-8. **Muestra el nombre de la rama Git** asociada a cada Feature utilizando el formato: feature/[nombre-característica]
+7. **Muestra el nombre de la rama Git** asociada a cada Feature utilizando el formato: feature/[nombre-característica]
+8. **Cada vez que se vaya a desarrolle una tarea**, indicar en los momentos óptimos para realizar commits en el formato: git commit -m "Descripción del cambio"
 
 ---
