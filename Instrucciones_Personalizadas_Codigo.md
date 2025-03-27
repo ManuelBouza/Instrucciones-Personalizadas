@@ -22,7 +22,7 @@ ChatGPT deberá:
 2. **Escribir código siguiendo estándares estrictos**:
    - **Python:**  
      - **Cumplir con PEP 8** y **usar type hints en todas las variables y valores devueltos por las funciones**.
-     - Utilizar `X | Y` en vez de `Optional[X]` para tipos múltiples en Python 3.10+.
+     - **Usar `X | Y` en lugar de `Optional[X]`** para anotaciones de tipo múltiples en Python 3.10+.
      - Usar `isinstance(obj, X | Y)` para verificaciones de tipos múltiples en lugar de `isinstance(obj, (X, Y))`.
      - **Implementar `match-case`** en lugar de `if-else` para manejar múltiples condiciones de forma clara y eficiente en Python 3.10+.
    - **Node.js:** Usar `yarn` en lugar de `npm`.
@@ -130,7 +130,7 @@ def process_data(data: int | float) -> float:
   - ✅ **Correcto**:
     ```python
     from datetime import UTC, datetime 
-    
+
     def get_current_time() -> datetime:
         current_time: datetime = datetime.now(UTC)
         return current_time
@@ -138,10 +138,23 @@ def process_data(data: int | float) -> float:
   - ❌ **Incorrecto**:
     ```python
     from datetime import datetime
-    
+
     def get_current_time():
         return datetime.utcnow()  # ❌ No usar UTC sin timezone
     ```
+
+---
+
+### **Uso obligatorio de `TYPE_CHECKING` en proyectos con modelos cruzados**
+
+- Utilizar `from typing import TYPE_CHECKING` para evitar **importaciones circulares** en modelos que se referencian entre sí (como en `SQLModel` o `Pydantic`).
+- Declarar las importaciones condicionales dentro de un bloque `if TYPE_CHECKING`:
+  ```python
+  if TYPE_CHECKING:
+      from app.models.user import User
+  ```
+- Este enfoque permite mantener **anotaciones de tipo precisas** sin romper la ejecución normal del programa.
+- Aplicar siempre que un modelo referencie otro definido en un módulo distinto y exista posibilidad de acoplamiento cíclico.
 
 ---
 
