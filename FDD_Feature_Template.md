@@ -6,6 +6,7 @@
 ---
 
 **Prioridad:**  [Alta | Media | Baja]
+**Estimación de Esfuerzo:**  [Aproximación del tiempo requerido en horas o días.]
 
 ---
 
@@ -14,8 +15,6 @@ La característica se considerará completada cuando se cumplan los siguientes c
 - [Criterio 1: Descripción clara de la validación a realizar.]  
 - [Criterio 2: Explicación del comportamiento esperado.]  
 - [Criterio 3: Pruebas específicas que deben ejecutarse.]
-
-**Estimación de Esfuerzo:**  [Aproximación del tiempo requerido en horas o días.]
 
 ---
 
