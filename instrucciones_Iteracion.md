@@ -1,6 +1,3 @@
-
-
-
 ### 🧠 **C.R.A.F.T. Prompt Inicial para la Iteración 1: Seguridad, Autenticación y Administración Inicial**
 
 ---

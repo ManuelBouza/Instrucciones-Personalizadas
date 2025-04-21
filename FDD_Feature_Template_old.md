@@ -6,6 +6,7 @@
 ---
 
 **Prioridad:**  [Alta | Media | Baja]
+
 **Estimación de Esfuerzo:**  [Aproximación del tiempo requerido en horas o días.]
 
 ---
