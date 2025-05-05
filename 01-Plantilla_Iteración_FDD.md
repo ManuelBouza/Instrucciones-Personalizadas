@@ -1,4 +1,4 @@
-### 📘 Plantilla de Iteración para FDD
+### Plantilla de Iteración para FDD
 
 #### **Número y Nombre de la Iteración:**  
 [Identificación secuencial acompañada de un título claro y representativo del contenido funcional que se abordará.]  

@@ -1,64 +1,82 @@
-### Plantilla de Características para FDD + TDD + Modelado
+### 📄 Plantilla de Características para FDD
 
-#### **[Nombre de la Característica]**  
-**Descripción:**  
-[Explica de manera concisa el propósito y funcionalidad de la característica dentro del sistema.]
+#### **✨ \[Nombre de la Característica]**
 
----
-
-**Prioridad:** [Alta | Media | Baja]  
-**Estimación de Esfuerzo:** [Aproximación del tiempo requerido en horas o días.]
+**📝 \[Describe de forma clara el propósito de esta característica y qué funcionalidad concreta aportará al sistema. Debe explicar el valor que entrega y cómo será usada por los usuarios.]**
 
 ---
 
-### **Criterios de Aceptación:**  
-La característica se considerará completada cuando se cumplan los siguientes criterios:  
-- [ ] [Validación funcional esperada]  
-- [ ] [Comportamiento esperado]  
-- [ ] [Cobertura de pruebas automatizadas]
+**📌 Prioridad:** \[Alta | Media | Baja]
+**⏳ Estimación de Esfuerzo:** \[Horas o días estimados]
 
 ---
 
-### **Diseño Previo Requerido (antes de tareas):**  
-- [ ] Diseñar **Diagrama de Secuencia** de la característica, siguiendo el enfoque del **Modelo C4**.  
-- [ ] Validar el flujo de interacción entre los elementos del sistema.
+**🌿 Rama Git asociada:**
+`feature/[nombre-característica]`
 
 ---
 
-**Rama Git asociada:** `feature/[nombre-característica]`
+### ✅ Criterios de Aceptación
+
+* [ ] 🎯 \[La característica permite realizar correctamente la acción prevista por el usuario.]
+* [ ] 📋 \[Se validan correctamente todos los datos y escenarios definidos.]
+* [ ] 🧪 \[Las pruebas unitarias, de integración y E2E están completas y aprobadas.]
 
 ---
 
-### **Tareas Desglosadas (siguiendo la metodología TDD):**
+## 🛠️ Tareas Desglosadas
 
-#### **[ ] Tarea 1: [Descripción clara y concisa de la tarea]**
-- **Objetivo:** [Qué se espera lograr con esta tarea.]
-
-#### **[ ] Tarea 2: [Descripción clara y concisa de la tarea]**
-- **Objetivo:** [Qué se espera lograr con esta tarea.]
-
-#### **[ ] Tarea 3: [Descripción clara y concisa de la tarea]**
-- **Objetivo:** [Qué se espera lograr con esta tarea.]
-
-#### **[ ] Tarea Final: Validación de Flujo Completo (Prueba E2E)**
-- **Objetivo:** Ejecutar la prueba extremo a extremo para validar la característica como un todo usando Playwright u otra herramienta definida.
+> ⚠️ Esta sección debe escribirse en **modo narrativo, no como lista de acciones**, y debe ofrecer una descripción clara de **lo que se hará** en cada zona del sistema. No incluir detalles técnicos específicos que pertenezcan a las tareas individuales.
 
 ---
 
-### **Dependencias:**  
-- [Dependencia 1]  
-- [Dependencia 2]
+### 🧩 Diseño Previo
+
+\[Se debe modelar el flujo funcional y técnico de la característica, representando cómo se comunican los elementos del sistema (Frontend, Backend y Base de Datos). Este modelo puede reflejarse en un diagrama de secuencia que sirva como guía para los desarrollos posteriores.]
 
 ---
 
-### **Preocupaciones Transversales:**  
-- **Seguridad:** [Consideraciones de seguridad específicas.]  
-- **Escalabilidad:** [Aspectos técnicos a considerar para escalar.]  
-- **Compatibilidad:** [Con otros sistemas o versiones anteriores.]
+### 🛢️ Base de Datos
+
+\[Se establecerá la estructura de datos necesaria para soportar la funcionalidad, incluyendo creación o modificación de tablas, relaciones y restricciones de integridad. Si aplica, se tendrá en cuenta el registro de eventos o estados relevantes para trazabilidad.]
 
 ---
 
-### **Notas Adicionales:**  
-[Cualquier información extra relevante, como riesgos, comentarios del equipo o requisitos especiales.]
+### 🖥️ Backend
+
+\[Se implementarán las funciones necesarias para gestionar la lógica del servidor. Esto puede incluir la creación de endpoints, validación de datos, ejecución de operaciones sobre la base de datos, emisión de respuestas estructuradas y aplicación de reglas de negocio. Además, se deben desarrollar las pruebas unitarias e integración necesarias para garantizar su funcionamiento.]
+
+---
+
+### 🖼️ Frontend
+
+\[Se construirá la interfaz visual que permita al usuario interactuar con esta funcionalidad. Esto puede implicar formularios, componentes, pantallas o integraciones con el backend. También se contemplarán validaciones visuales, retroalimentación al usuario y gestión del estado asociado.]
+
+---
+
+### 🧪 Pruebas End-to-End (E2E)
+
+\[Se validará el recorrido completo del usuario mediante pruebas automatizadas que simulen su interacción real con el sistema. Estas pruebas deben contemplar escenarios exitosos, casos de error, y validaciones visuales o funcionales, usando herramientas como Playwright, Cypress u otras.]
+
+---
+
+## 🔗 Dependencias
+
+* \[Nombre del módulo, componente o librería del que depende esta característica]
+* \[Sistema externo o integración relevante, si aplica]
+
+---
+
+## 🛡️ Preocupaciones Transversales
+
+* **🔒 Seguridad:** \[Aspectos clave como validación de acceso, cifrado de datos, control de sesiones o privacidad de la información.]
+* **📈 Escalabilidad:** \[Criterios de diseño que faciliten el crecimiento de la funcionalidad sin afectar el rendimiento del sistema.]
+* **🔄 Compatibilidad:** \[Alineación con otras partes del sistema, versiones anteriores o posibles extensiones futuras.]
+
+---
+
+### **Notas Adicionales:**
+
+\[Información relevante como decisiones del equipo, riesgos conocidos, consideraciones técnicas o funcionales, o cualquier aspecto que se deba tener en cuenta durante el desarrollo.]
 
 ---
