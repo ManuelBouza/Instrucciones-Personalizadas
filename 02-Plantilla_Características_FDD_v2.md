@@ -33,11 +33,11 @@
 
 ## 🛠️ Tareas Desglosadas
 
-> ⚠️ Esta sección debe incluir solo tareas **funcionales** que representan el objetivo visible del usuario.
+> ⚠️ Esta sección debe incluir solo tareas **funcionales**, es decir, aquellas que representan un comportamiento visible y completo del sistema desde la perspectiva del usuario.
 >
-> **Cada tarea funcional debe implicar necesariamente la creación de un endpoint**, ya que su objetivo es exponer una nueva acción o recurso disponible para el usuario o sistema externo.
+> Cada tarea funcional debe cubrir un **flujo de extremo a extremo** entre frontend y backend (si aplica), lo cual permite que sea **representada mediante un diagrama dinámico (`dynamic`) en el modelo C4**.
 >
-> Las tareas técnicas necesarias para implementar cada funcionalidad se detallarán en archivos separados de tareas (`T01-*.md`), y cada una debe cumplir con TDD.
+> Las tareas técnicas internas necesarias para implementar cada funcionalidad (como pruebas, refactorizaciones, optimizaciones, etc.) se documentarán por separado en los archivos individuales de tarea (`T01-*.md`, `T02-*.md`, etc.), cada una siguiendo el enfoque TDD.
 
 | Nº  | ✔ | Tarea funcional                                                      |
 | --- | - | -------------------------------------------------------------------- |

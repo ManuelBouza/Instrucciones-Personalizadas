@@ -12,6 +12,12 @@
 
 ---
 
+### 🧩 Diseño Previo
+
+Se debe modelar el flujo funcional y técnico mediante un **diagrama de secuencia dinámico (`dynamic`) en Structurizr**, describiendo la interacción entre usuarios, frontend, backend y base de datos. Este diagrama será obligatorio como guía visual para el desarrollo y validación de la tarea.
+
+---
+
 ### 🧩 Backend (FastAPI + SQLModel)
 
 > Cada punto debe desarrollarse siguiendo el ciclo TDD (Rojo → Verde → Refactor) con **pytest** y pruebas integradas en FastAPI.
@@ -71,6 +77,16 @@
 * [ ] Test de casos extremos o borde
 * [ ] Validación de flujos alternativos (si aplica)
 * [ ] Confirmar que **todas las pruebas** frontend (`vitest`) pasan correctamente
+
+---
+
+### 🧪 **Test E2E (`playwright`)**
+
+* [ ] Test de casos válidos
+* [ ] Test de errores o inputs inválidos
+* [ ] Test de casos extremos o borde
+* [ ] Validación de flujos alternativos (si aplica)
+* [ ] Confirmar que **todas las pruebas** E2E (`playwright`) pasan correctamente 
 
 ---
 
