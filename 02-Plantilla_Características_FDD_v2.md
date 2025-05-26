@@ -25,12 +25,6 @@
 
 ---
 
-### 🧩 Diseño Previo
-
-\[Se debe modelar el flujo funcional y técnico de la característica, representando cómo se comunican los elementos del sistema (Frontend, Backend y Base de Datos). Este modelo puede reflejarse en un diagrama de secuencia que sirva como guía para los desarrollos posteriores.]
-
----
-
 ## 🛠️ Tareas Desglosadas
 
 > ⚠️ Esta sección debe incluir solo tareas **funcionales**, es decir, aquellas que representan un comportamiento visible y completo del sistema desde la perspectiva del usuario.
